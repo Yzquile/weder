@@ -1,0 +1,50 @@
+
+{
+  "coord": {
+    "lon": 123.515,
+    "lat": 9.2142
+  },
+  "weather": [
+    {
+      "id": 500,
+      "main": "Rain",
+      "description": "light rain",
+      "icon": "10d"
+    }
+  ],
+  "base": "stations",
+  "main": {
+    "temp": 27.33,
+    "feels_like": 29.83,
+    "temp_min": 27.33,
+    "temp_max": 28.1,
+    "pressure": 1009,
+    "humidity": 74,
+    "sea_level": 1009,
+    "grnd_level": 1006
+  },
+  "visibility": 10000,
+  "wind": {
+    "speed": 2.63,
+    "deg": 267,
+    "gust": 2.95
+  },
+  "rain": {
+    "1h": 3.16
+  },
+  "clouds": {
+    "all": 31
+  },
+  "dt": 1661870592,
+  "sys": {
+    "type": 2,
+    "id": 2075663,
+    "country": "PH",
+    "sunrise": 1661834187,
+    "sunset": 1661882248
+  },
+  "timezone": 7200,
+  "id": 3163858,
+  "name": "Siquijor",
+  "cod": 200
+}
