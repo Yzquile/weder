@@ -10,6 +10,7 @@ import {
 } from "../../img/";
 
 //OpenWeatherMap Geo API to convert the city name into latitude and longitude values.
+//Longitude and Latitude values then be used to query on the fetchWeatherData and Forecast.
 export async function getLocation(cityName, setLocation) {
   try {
     const response = await fetch(
@@ -31,6 +32,8 @@ export async function getLocation(cityName, setLocation) {
 }
 
 //Geolocation API to fetch the user's latitude and longitude values
+//Effects only on the first load.
+//if user denies location access, set default location to Cebu City
 export function getUserLocation(setLocation) {
   const handleLocationSuccess = (position) => {
     const { latitude, longitude } = position.coords;
@@ -58,6 +61,7 @@ export function getUserLocation(setLocation) {
   }
 }
 
+//Fetching weather data using the latitude and longitude values from searched city names that is converted by geo api
 export async function fetchWeatherData(
   location,
   setWeatherData,
