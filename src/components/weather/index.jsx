@@ -67,7 +67,7 @@ export default function Weather() {
 
   return (
     <div
-      className="min-h-screen w-screen"
+      className="min-h-screen min-w-screen"
       style={{
         backgroundImage: `url(${bgImage})`,
         backgroundSize: "cover",
@@ -80,7 +80,7 @@ export default function Weather() {
         inputError={inputError}
       />
       {/* Location info */}
-      <div className="Weather h-60 flex flex-col justify-center items-center text-center">
+      <div className="h-60 flex flex-col justify-center items-center text-center">
         {errorMessage ? (
           <div>
             <h1 className="text-6xl font-bold text-white font-serif">
@@ -113,12 +113,12 @@ export default function Weather() {
         )}
       </div>
       {/* Weather details and Forecast */}
-      <div className="container flex w-screen flex-wrap text-center justify-around sm:flex-row">
+      <div className="m-auto flex w-screen flex-wrap text-center justify-around sm:flex-row">
         <div className="w-10/12 h-auto mb-4 lg:w-2/5 rounded-3xl bg-gray-400 bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-10 border border-gray-100">
           <h2 className="mt-3 text-xl font-bold">Weather Details</h2>
 
           {errorMessage ? null : weatherData ? (
-            <div className="flex flex-col justify-center w-11/12">
+            <div className="flex flex-col justify-center w-11/12 mx-auto">
               <div className="p-4 flex align-center justify-between">
                 <p>Temp max</p>
                 <p>{weatherData?.main?.temp_max} &deg;C</p>
